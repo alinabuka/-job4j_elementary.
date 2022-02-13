@@ -30,23 +30,23 @@ public class PointTest {
     }
 
     @Test
-    public void when74to4532Then47() {
+    public void when74to4532Then47dot20() {
         int x1 = 7;
         int y1 = 4;
         int x2 = 45;
         int y2 = 32;
-        double expected = 47.20169;
+        double expected = 47.20;
         double out = Point.distanse(x1, y1, x2, y2);
         Assert.assertEquals(expected, out, 0.01);
     }
 
     @Test
-    public void whenMinus13toMinus4Minus2Then5() {
+    public void whenMinus13toMinus4Minus2Then5dot83() {
         int x1 = -1;
         int y1 = 3;
         int x2 = -4;
         int y2 = -2;
-        double expected = 5.83095;
+        double expected = 5.83;
         double out = Point.distanse(x1, y1, x2, y2);
         Assert.assertEquals(expected, out, 0.01);
     }
