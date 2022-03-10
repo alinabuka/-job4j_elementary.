@@ -20,4 +20,20 @@ public class TurnTest {
         int[] expected = new int[] {5, 4, 3, 2, 1};
         Assert.assertArrayEquals(expected, result);
     }
+
+    @Test
+    public void whenTurnArrayWithEvenAmountOfElementsThenTurnedArraydot() {
+        int[] input = new int[] {1, 2, 3, 4, 5, 6, 7, 8};
+        int[] result = Turn.back(input);
+        int[] expected = new int[] {8, 7, 6, 5, 4, 3, 2, 1};
+        Assert.assertArrayEquals(expected, result);
+    }
+
+    @Test
+    public void whenTurnArrayWithOddAmountOfElementsThenTurnedArraydot() {
+        int[] input = new int[] {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        int[] result = Turn.back(input);
+        int[] expected = new int[] {9, 8, 7, 6, 5, 4, 3, 2, 1};
+        Assert.assertArrayEquals(expected, result);
+    }
 }
