@@ -80,6 +80,7 @@ public class MatrixCheckTest {
 
     @Test
     public void whenDiagonalMix() {
+
         char[][] input = {
                 {'X', ' ', ' '},
                 {' ', 'Y', ' '},
