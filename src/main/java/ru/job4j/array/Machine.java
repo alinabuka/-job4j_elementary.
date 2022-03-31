@@ -11,7 +11,7 @@ public class Machine {
         for (int coin : coins) {
             while (cashback >= coin) {
                 cashback -= coin;
-                rsl[size] = rsl[size] + coin;
+                rsl[size] = coin;
                 size++;
             }
         }
